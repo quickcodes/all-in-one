@@ -78,13 +78,6 @@ void main()
     char game;
     int task;
     printf("\n  Hello...\n");
-    /*
-    printf("  Nichuu se choose krke batao kya krna cahoge ->\n");
-    printf("\n");
-    printf("  1 -> Assending order m jama h value.\n");
-    printf("  2 -> Positive or negative numbers cheque krna h.\n");
-    printf("\n");
-    */
 
 
         START:
@@ -92,14 +85,13 @@ void main()
         printf("  Choose the operation ->\n");
         printf("\n");
         printf("  1 -> I want to arrange the values in assending order.\n");
-        printf("  2 -> i want to cheque Positive or negative numbers.\n");
+        printf("  2 -> i want to cheque how many entered numbers are positive or negative..\n");
         printf("  3 -> I want to find the length of your name.\n");
-        printf("  4 -> I want to play with my birth date.\n");
+        printf("  4 -> I want find how many year, month, weeks, day, hours you live.\n");
         printf("\n");
         task=0;
         printf("  Enter the operation here : \n  ");
         scanf("  %d",&task);
-
 
 
         // first task
@@ -151,7 +143,7 @@ void main()
         // second case
         else if(task==2)
         {
-            printf("\n  2 task is working...\n");
+            printf("\n  2 task is working... (press '=' for exit)\n");
 
             int number, p = 0, n = 0;
 
@@ -290,9 +282,10 @@ void main()
         }
 
         // restart the game
-        int a;
+        char a;
         printf("\n\tPRESS '1' TO PLAY MORE : ");
-        if(scanf("%d",&a)==1){
+        a = getch();
+        if(a==1){
             goto START;
         }
         else printf("\n\t On the way to success\n");
