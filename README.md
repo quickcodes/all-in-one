@@ -1,4 +1,4 @@
-# all-in-one
+# C Projects
 Through this code you can -
 - Arrange values in assending order.
 - cheque how many entered numbers are positive or negative.
